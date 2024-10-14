@@ -20,9 +20,17 @@
 
 Notes for automating code via Github Actions
 
-**Requirements**, eventually install via `requirements.txt` file
+### Python Requirements
+
+*eventually install via `requirements.txt` file*
   - [requests](https://requests.readthedocs.io/en/latest/)
   - [NumPy](https://numpy.org/doc/stable/)
   - [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/intro/)
   - [matplotlib](https://matplotlib.org/stable/)
   - [PyKridge](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
+  
+### Environment Variables
+
+See example `[.env]()` file for information about the three required environment variables. 
+They are stored and used as secrets on this repository, although only the API key will be kept private 
+in the resulting webpage.
