@@ -27,7 +27,7 @@ Notes for automating code via Github Actions
   - [NumPy](https://numpy.org/doc/stable/)
   - [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/intro/)
   - [matplotlib](https://matplotlib.org/stable/)
-  - [PyKridge](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
+  - [PyKrige](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
   
 ### Environment Variables
 
