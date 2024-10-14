@@ -1,6 +1,6 @@
 import json
 import requests as re
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np
 # from dotenv import load_dotenv # for local use only
@@ -16,6 +16,7 @@ def collect_data():
     geo_bbox = [float(val) for val in getenv('geo_bbox').split(',')]
     api_key = getenv('api_key')
     variogram_model = getenv('variogram_model', default='hole-effect')
+    local_time = getenv('local_time')
     
     # print('Querying Purple Air API')
     # Query Purple Air API
@@ -35,7 +36,10 @@ def collect_data():
         print ('Failed API request', r.status_code, r.text)
         return r.text, _, _, _, _
     
-    retrieved = datetime.fromtimestamp(r.json()['data_time_stamp']).strftime('%x %X')
+    # convert from UTC (github actions) to local time, label timezone
+    dt_utc = datetime.fromtimestamp(r.json()['data_time_stamp']).replace(tzinfo=timezone.utc)
+    dt_loc = dt_utc.astimezone(tz=local_time)
+    retrieved = f"{dt_loc.strftime('%x %X')} {dt_loc.tzname()}"
     d = r.json()['data']
     
     # store sensor data as lists --> arrays

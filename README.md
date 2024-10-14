@@ -13,6 +13,7 @@
    - ***switch parameters specified by environmental variables to repository secrets***
    - necessary elements for web page left empty, will test run code and see if everything works
      - data (kriging graphs), colorbar image, etc . . . 
+	 - success!
 	 
 	 
 	 
@@ -34,3 +35,8 @@ Notes for automating code via Github Actions
 See example `[.env](/example.env)` file for information about the three required environment variables. 
 They are stored and used as secrets on this repository, although only the API key will be kept private 
 in the resulting webpage.
+
+ - api_key
+ - geo_bbox
+ - variogram_model
+ - local_time

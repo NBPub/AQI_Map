@@ -2,7 +2,7 @@ name: run map_write.py
 
 on:
   schedule:
-    - cron:  '30 */2 * * *'
+    - cron:  '0 * * * *'
 
 jobs:
   build:
@@ -27,7 +27,13 @@ jobs:
           api_key: ${{ secrets.API_KEY }}
           geo_bbox: ${{ secrets.GEO_BBOX }}
           variogram_model: ${{ secrets.VARIOGRAM_MODEL }}
+          local_time: ${{ secrets.LOCAL_TIME }}
         run: python -m map_write
+      
+      - name: delete pycache
+        run: |
+          rm -fr __pycache__
+          rm -fr static/__pycache__
      
       - name: commit files
         run: |
