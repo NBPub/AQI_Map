@@ -2,7 +2,7 @@ name: run map_write.py
 
 on:
   schedule:
-    - cron:  '48 5 * * *'
+    - cron:  '3 6 * * *'
 
 jobs:
   build:

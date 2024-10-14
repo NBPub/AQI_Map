@@ -3,7 +3,7 @@ import requests as re
 from datetime import datetime
 from pathlib import Path
 import numpy as np
-from dotenv import load_dotenv
+# from dotenv import load_dotenv # for local use only
 from os import getenv
 
 from .kriging_draw import draw_kriging
@@ -12,7 +12,7 @@ from .aqi_calc import aqi_calc
 
 def collect_data():
     # load settings via environment variables
-    load_dotenv()
+    # load_dotenv() # for local use only
     geo_bbox = [float(val) for val in getenv('geo_bbox').split(',')]
     api_key = getenv('api_key')
     variogram_model = getenv('variogram_model', default='hole-effect')
