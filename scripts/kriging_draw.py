@@ -32,7 +32,7 @@ def draw_kriging(sensor_data, geo_bbox, model):
     plt.savefig(Path('data','kriging.png'), 
                 bbox_inches='tight', transparent=True)
                
-    # save variance plot
+    # save variance plot, std dev --> np.sqrt(np.abs(sigmasq))
     plt.imshow(sigmasq, origin='lower', extent=geo_bbox)
     plt.title(f'Kriging: {model} model')
     plt.ylabel('Latitude')

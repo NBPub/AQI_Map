@@ -11,9 +11,11 @@ from .aqi_calc import aqi_calc
 
 
 def collect_data():
+    # load settings via environment variables
     load_dotenv()
     geo_bbox = [float(val) for val in getenv('geo_bbox').split(',')]
     api_key = getenv('api_key')
+    variogram_model = getenv('variogram_model', default='hole-effect')
     
     print('Querying Purple Air API')
     # Query Purple Air API
@@ -63,12 +65,7 @@ def collect_data():
         'aqi': np.array(sensor_aqi),
         'color': np.array(sensor_color),
     }
-    
-    # load settings for Kriging
-    load_dotenv()
-    geo_bbox = [float(val) for val in getenv('geo_bbox').split(',')]
-    variogram_model = getenv('variogram_model', default='hole-effect')
-   
+
     # generate Kriging Graph from AQI sensors
     draw_kriging(sensor_data, geo_bbox, model=variogram_model)  
     

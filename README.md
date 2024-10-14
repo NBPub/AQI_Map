@@ -13,3 +13,16 @@
    - ***switch parameters specified by environmental variables to repository secrets***
    - necessary elements for web page left empty, will test run code and see if everything works
      - data (kriging graphs), colorbar image, etc . . . 
+	 
+	 
+	 
+## Actions
+
+Notes for automating code via Github Actions
+
+**Requirements**, eventually install via `requirements.txt` file
+  - [requests](https://requests.readthedocs.io/en/latest/)
+  - [NumPy](https://numpy.org/doc/stable/)
+  - [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/intro/)
+  - [matplotlib](https://matplotlib.org/stable/)
+  - [PyKridge](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
