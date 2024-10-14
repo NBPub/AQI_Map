@@ -31,6 +31,6 @@ Notes for automating code via Github Actions
   
 ### Environment Variables
 
-See example `[.env]()` file for information about the three required environment variables. 
+See example `[.env](/example.env)` file for information about the three required environment variables. 
 They are stored and used as secrets on this repository, although only the API key will be kept private 
 in the resulting webpage.

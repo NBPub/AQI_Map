@@ -17,7 +17,7 @@ def collect_data():
     api_key = getenv('api_key')
     variogram_model = getenv('variogram_model', default='hole-effect')
     
-    print('Querying Purple Air API')
+    # print('Querying Purple Air API')
     # Query Purple Air API
     # https://api.purpleair.com/#api-sensors-get-sensors-data
     base_url = 'https://api.purpleair.com/v1/sensors/'
