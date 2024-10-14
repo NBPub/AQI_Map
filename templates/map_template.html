@@ -27,7 +27,7 @@
 	  ul {color: khaki; }
 	  li { margin-bottom:5px; }
 	  hr { border-color: grey; }
-	  #map { height: 70vh; }
+	  #map { height: 60vh; }
 	  .leaflet-container .leaflet-control-mouseposition {
   background-color: white;
   box-shadow: 0 0 5px #bbb;
@@ -80,7 +80,7 @@
 		All concentrations greater than 325.4 µg/m<sup>3</sup> are reported to have an AQI of 501.
 	  </p>
 	  <a href="https://forum.airnowtech.org/t/the-aqi-equation-2024-valid-beginning-may-6th-2024/453", alt="AQI calculation table" target="_blank">
-	    <img src="static/aqi_table.png">
+	    <img src="static/aqi_table.png" style="max-width:90vw; height:auto;">
 	  </a>
 	  <br>
 	  <a href="https://www.airnow.gov/aqi/aqi-basics/" target="_blank">EPA AQI Basics</a>
@@ -118,7 +118,7 @@
 	  var cbar = L.control({position: 'bottomright'}); 
 	    cbar.onAdd = function (map) {        
 		var div = L.DomUtil.create('div', 'info cbar');
-		div.innerHTML = '<img src="static/colorbar.png" style="opacity:0.7";>';     
+		div.innerHTML = '<img src="static/colorbar.png" style="opacity:0.7; max-width:50vw; height:auto;" />';     
 		return div;
 };      
 cbar.addTo(map);
