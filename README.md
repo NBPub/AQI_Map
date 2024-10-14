@@ -23,16 +23,18 @@ Notes for automating code via Github Actions
 
 ### Python Requirements
 
-*eventually install via `requirements.txt` file*
+**See [requirements.txt](/requirements.txt) for full list**
   - [requests](https://requests.readthedocs.io/en/latest/)
   - [NumPy](https://numpy.org/doc/stable/)
   - [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/intro/)
   - [matplotlib](https://matplotlib.org/stable/)
   - [PyKrige](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
+  - **local use only**
+    - [python-dotenv](https://github.com/theskumar/python-dotenv)
   
 ### Environment Variables
 
-See example `[.env](/example.env)` file for information about the three required environment variables. 
+See example [.env](/example.env) file for information about the three required environment variables. 
 They are stored and used as secrets on this repository, although only the API key will be kept private 
 in the resulting webpage.
 

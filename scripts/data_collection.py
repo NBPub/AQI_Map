@@ -1,6 +1,7 @@
 import json
 import requests as re
 from datetime import datetime, timezone
+import pytz
 from pathlib import Path
 import numpy as np
 # from dotenv import load_dotenv # for local use only
@@ -16,7 +17,7 @@ def collect_data():
     geo_bbox = [float(val) for val in getenv('geo_bbox').split(',')]
     api_key = getenv('api_key')
     variogram_model = getenv('variogram_model', default='hole-effect')
-    local_time = getenv('local_time')
+    local_time = pytz.timezone(getenv('local_time'))
     
     # print('Querying Purple Air API')
     # Query Purple Air API
