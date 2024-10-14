@@ -29,6 +29,8 @@ Notes for automating code via Github Actions
   - [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/intro/)
   - [matplotlib](https://matplotlib.org/stable/)
   - [PyKrige](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
+  - **remote use only**
+    - [pytz](https://pythonhosted.org/pytz/)
   - **local use only**
     - [python-dotenv](https://github.com/theskumar/python-dotenv)
   

@@ -2,7 +2,7 @@ name: run map_write.py
 
 on:
   schedule:
-    - cron:  '45 * * * *'
+    - cron:  '30 * * * *'
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
       - name: delete pycache
         run: |
           rm -fr __pycache__
-          rm -fr static/__pycache__
+          rm -fr scripts/__pycache__
      
       - name: commit files
         run: |
