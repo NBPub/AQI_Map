@@ -15,19 +15,21 @@
 ## Usage
 
 Fork this repository and set repository [variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables) 
-to create your own AQI map. It is recommended to use [secrets](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions) 
-to store your API key. A Github [workflow](/.github/workflows/main.yaml) runs [map_write](/map_write.py) 
-at a specified interval to update the data and webpage.
+to create your own AQI map. [Secrets](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions) 
+should be used to store your API key. A Github [workflow](/.github/workflows/main.yml) runs the [main script(/map_write.py) 
+at a [specified interval](https://en.wikipedia.org/wiki/Cron) to update the data and webpage.
 
-The code can also be downloaded and run locally, although some changes are required and recommended. 
-Continue reading below for more details.
+The code can also be downloaded and run [locally](/docs#local-use), although some changes are 
+[required](/docs#required-modifications) and [recommended](/docs#recommended-modifications). 
 
 ### Workflow
 
-Actions [file](/.github/workflows/main.yaml) 
+[Actions YAML file](/.github/workflows/main.yml) 
  - checks out repository
- - runs `[map_write](/map_write.py)` on Python 3.12
+ - runs [`map_write`](/map_write.py) with Python 3.12
    - installs requirements, loads environment variables
+     - Python package installation can specify packages listed below or use a [requirements.txt](/requirements.txt) file
+   - `map_write` calls each script located in the [scripts](/scripts) subdirectory
    - clears generated `__pycache__` directories 
  - commits updated files and pushes changes back to repository
 
@@ -37,7 +39,7 @@ Actions [file](/.github/workflows/main.yaml)
 **[requirements.txt](/requirements.txt) provides a full list of installed packages**
   - [requests](https://requests.readthedocs.io/en/latest/)
   - [NumPy](https://numpy.org/doc/stable/)
-  - [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/intro/)
+  - [Jinja2](https://jinja.palletsprojects.com/en/)
   - [matplotlib](https://matplotlib.org/stable/)
   - [PyKrige](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
   - **remote use only**
@@ -45,7 +47,7 @@ Actions [file](/.github/workflows/main.yaml)
   - **local use only**
     - [python-dotenv](https://github.com/theskumar/python-dotenv)
 	
-*AQI_Map code has been run with Python 3.10, 3.11, and 3.12*
+*AQI_Map code has been successfully run with Python 3.10, 3.11, and 3.12*
 
 ### Environment Variables
 
@@ -53,22 +55,21 @@ The example [.env](/example.env) file also contains information about the requir
 They are stored and used as secrets on this repository, although only the API key will be kept private 
 in the resulting webpage. A `.env` file is required for local use.
 
- - api_key
+ - **api_key**
    - Purple Air API "Read" Key is required for data collection
-   - [API Dashboard](https://develop.purpleair.com/dashboards/keys)
-   - [API Docs](https://api.purpleair.com/#api-welcome-using-api-keys)
- - geo_bbox
-   - geographical coordinates specify which sensors to query and the extent of the map coloring
+     - [API Dashboard](https://develop.purpleair.com/dashboards/keys)
+     - [API Docs](https://api.purpleair.com/#api-welcome-using-api-keys)
+ - **geo_bbox**
+   - geographical "bounding box" [coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system) specify which sensors to query and where the map will be colored
    - format: `<lng1>, <lng2>, <lat1>, <lat2>`
- - variogram_model
+ - **variogram_model**
    - variogram model used for Ordinary Kriging, see PyKrige [documentation](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/generated/pykrige.ok.OrdinaryKriging.html#pykrige.ok.OrdinaryKriging)
-   - an example for how to select a model is provided [below](/docs#variogram-model-selection)
-     - anecdotally . . . 
-	   - `hole-effect` works best for the current page's bounds `-121.74, -120.78, 43.63, 44.42`
-	   - `gaussian` or `exponential` work best for the coordinate bounds listed in the example file
- - local_time
-   - specify a [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) to convert time from UTC
-   - only needed when running on a repository, changes required to code for local use
+   - how to select a model [example](/docs#variogram-model-selection), anecdotally . . . 
+     - `hole-effect` works best for the current page's bounds `-121.74, -120.78, 43.63, 44.42`, smaller region
+	 - `gaussian` or `exponential` work best for the coordinate bounds listed in the example file, larger region
+ - ****local_time**
+   - specify a [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) to convert from UTC
+   - only needed when running on a repository, code changes [required](/docs#required) for local use
 
 ## Local Use
 
@@ -76,24 +77,26 @@ AQI_Map code can be modified for local use. As mentioned above, environment vari
 code's root directory and read with an additional package, [python-dotenv](https://github.com/theskumar/python-dotenv). A virtual 
 environment, [`venv`](https://docs.python.org/3/library/venv.html), is recommended to install the requirements and run the code.
 
-**Required Modifications**
+### Required Modifications
 
 [data_collection.py](/scripts/data_collection.py)
- - Uncomment lines that import and use **python-dotenv** (7, 16)
- - Remove timezone conversion of **data_time_stamp** (lines 41-43)
+ - Uncomment lines that import and use **python-dotenv** ([7](/data_collection.py#L7), [16](/data_collection.py#L16))
+ - Remove timezone conversion of **data_time_stamp** (lines [41](/data_collection.py#L41)-[43](/data_collection.py#L43))
    - Replace with `retrieved = datetime.fromtimestamp(r.json()['data_time_stamp']).strftime('%x %X')`
    
-**Recommended Modifications**
- - store data retrieved from the API call, as JSON or using [`np.save`](https://numpy.org/doc/stable/reference/generated/numpy.save.html)
-   - check modification time of data before making another API call, and alternatively use stored data
+### Recommended Modifications
+ - store data retrieved from the API call, 
+   - returned data as JSON or 
+   - processed data using [`np.save`](https://numpy.org/doc/stable/reference/generated/numpy.save.html)
+ - check modification time of data before making another API call, and alternatively use stored data
    - *AQI_Map code does not store data as a dictionary and uses NumPy arrays. These must be converted to lists to be JSON serializable*.
- - add additional print statements or logging to track API calls or failed requests
+ - add/improve print statements or logging to track API calls or failed requests
  - alter HTML [template](/templates/map_template.html) to your preferences, add more helpful information
 
-<details><summary>Saving data from API call</summary> 
+**API return to JSON**
 
 ```python
-# . . .  API call request stored as "r"
+# API call request stored as "r"
 data = r.json()['data']
 
 for sens in data:
@@ -109,9 +112,8 @@ for sens in data:
 with open(Path('data','sensors.json'), 'w') as file:
 	json.dump(sensors, file)
 ```
-</details>
 
-<details><summary>File modified check</summary> 
+**File modified check**
 
 ```python
 if Path('data','sensors.json').exists():
@@ -130,9 +132,6 @@ else:
 # finish preparing data for template
 ```
 
-</details>
-
-
 ## Kriging
 
 Each sensor's PM2.5 concentration (30 minute average) is [converted](/scripts/aqi_calc.py) to an AQI value, 
@@ -150,7 +149,7 @@ on the sensor data and extent of the region. It may change as the data changes. 
 It can also be useful to compare the resulting variance plots.
 
 
-<details><summary>Kriging model evaluation, example with statistics</summary> 
+**Kriging model evaluation, example with statistics**
 
 ```python
 # evaluate variogram model statistics, per docs:
@@ -168,19 +167,18 @@ for vm in ['linear', 'power', 'gaussian', 'spherical', 'exponential', 'hole-effe
     print()
 ```
 
-</details>
 
 
+## [Web Page](https://nbpub.github.io/AQI_Map/)
 
-## Web Page
-
-Data and graphs are written into a static HTML page using Jinja2, see the map writing 
-[script](/map_write.py) and the [template](/templates/map_template.html).
+Data and graphs are written into a static HTML page using [Jinja2](https://jinja.palletsprojects.com/en/), 
+see the map writing [script](/map_write.py) and the [template](/templates/map_template.html). The resulting 
+web page is hosted on the repository using [Github Pages](https://pages.github.com/) depolyment.
 
 ### LeafletJS
 
-[LeafletJS](https://leafletjs.com/) is used to embded and extend [OpenStreetMap](https://www.openstreetmap.org/) tiles. 
-The kriging interpolation is overlaid over the map, sensor data is included as 
-[circle markers](https://leafletjs.com/reference.html#circlemarker), a colorbar is provided for AQI hues, 
+[LeafletJS](https://leafletjs.com/) is used to embed and extend [OpenStreetMap](https://www.openstreetmap.org/) tiles. 
+The kriging interpolation is overlaid on the map tiles, sensor data is included as 
+[circle markers](https://leafletjs.com/reference.html#circlemarker), an AQI colorbar is provided, 
 and a [plugin](https://github.com/ardhi/Leaflet.MousePosition) is used to display mouse position coordinates 
 on the upper right corner.
