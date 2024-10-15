@@ -5,7 +5,7 @@
    - [Workflow](/docs#workflow)
    - [Requirements](/docs#python-requirements)
    - [Environment Variables](/docs#environment-variables)
-   - [Run Locally](/docs#local-use)
+ - [Run Locally](/docs#local-use)
  - [Kriging](/docs#kriging)
    - [Variogram Models](/docs#variogram-model-selection)
  - [Web Page](/docs#web-page)
@@ -62,7 +62,7 @@ in the resulting webpage. A `.env` file is required for local use.
    - format: `<lng1>, <lng2>, <lat1>, <lat2>`
  - variogram_model
    - variogram model used for Ordinary Kriging, see PyKrige [documentation](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/generated/pykrige.ok.OrdinaryKriging.html#pykrige.ok.OrdinaryKriging)
-   - an example for how to select a model is provided [below](/#)
+   - an example for how to select a model is provided [below](/docs#variogram-model-selection)
      - anecdotally . . . 
 	   - `hole-effect` works best for the current page's bounds `-121.74, -120.78, 43.63, 44.42`
 	   - `gaussian` or `exponential` work best for the coordinate bounds listed in the example file
@@ -70,7 +70,7 @@ in the resulting webpage. A `.env` file is required for local use.
    - specify a [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) to convert time from UTC
    - only needed when running on a repository, changes required to code for local use
 
-### Local Use
+## Local Use
 
 AQI_Map code can be modified for local use. As mentioned above, environment variables should be specified in a `.env` file in the 
 code's root directory and read with an additional package, [python-dotenv](https://github.com/theskumar/python-dotenv). A virtual 
@@ -91,8 +91,8 @@ environment, [`venv`](https://docs.python.org/3/library/venv.html), is recommend
  - alter HTML [template](/templates/map_template.html) to your preferences, add more helpful information
 
 <details><summary>Saving data from API call</summary> 
-```python
 
+```python
 # . . .  API call request stored as "r"
 data = r.json()['data']
 
@@ -108,13 +108,12 @@ for sens in data:
 }
 with open(Path('data','sensors.json'), 'w') as file:
 	json.dump(sensors, file)
-	
 ```
 </details>
 
 <details><summary>File modified check</summary> 
-```python
 
+```python
 if Path('data','sensors.json').exists():
 	last_load = datetime.datetime.fromtimestamp(Path('data','sensors.json').stat().st_mtime)
 	time_since = datetime.datetime.now() - last_load
@@ -129,7 +128,6 @@ else:
 		sensors = json.load(file)
 
 # finish preparing data for template
-
 ```
 
 </details>
@@ -153,8 +151,8 @@ It can also be useful to compare the resulting variance plots.
 
 
 <details><summary>Kriging model evaluation, example with statistics</summary> 
-```python
 
+```python
 # evaluate variogram model statistics, per docs:
 # "ideally Q1 is close to zero, Q2 is close to 1, and cR is as small as possible"
 
@@ -168,7 +166,6 @@ for vm in ['linear', 'power', 'gaussian', 'spherical', 'exponential', 'hole-effe
     print('\t',vm)
     OK.print_statistics()
     print()
-	
 ```
 
 </details>
