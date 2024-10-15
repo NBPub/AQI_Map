@@ -1,19 +1,34 @@
-# AQI Map
+# [AQI Map](https://nbpub.github.io/AQI_Map/)
 
-*to be populated . . . for now:*
+This repository is used to host a demo page for an AQI Map, and for now, is continuously updated. 
+It is currently set within [Central Oregon](https://en.wikipedia.org/wiki/Central_Oregon), 
+but the code allows for any region to be specified by coordinate bounds.
 
-**Basics**
- - geographic region specified via bounding box
- - Purple Air API used to retrieve sensor PM2.5 data
+Detailed information is located in the [documentation](/docs) page.
+
+ - [Motivation](/#motivation)
+ - [Overview](/#motivation)
+ 
+## Motivation
+
+Late summer typically brings in smoke, and fine particulate matter from wildfires. 
+The map was created for an easy way to visualize up-to-date particulate matter 
+concentration (**[PM2.5](https://www.epa.gov/pm-pollution/particulate-matter-pm-basics)**) 
+and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics/)**).
+
+
+## Overview
+
+ - Purple Air [API](https://api.purpleair.com/) used to retrieve sensor PM2.5 data
    - AQI calculated using 30 min average
- - Sensor data used to interpolate AQI over region by OrdinaryKriging
- - Kriging result overlaid over dynamic map on web page
-   - Mapping and tiles provided by Leaflet and OpenStreetMap
- - beta version of page will be hosted on this repository and updated via Github actions
-   - ***switch parameters specified by environmental variables to repository secrets***
-   - necessary elements for web page left empty, will test run code and see if everything works
-     - data (kriging graphs), colorbar image, etc . . . 
-	 - success!
+   - Only sensors providing confident, recent data and with high location ratings used
+ - Sensor data used to interpolate AQI over region by [OrdinaryKriging](https://en.wikipedia.org/wiki/Kriging)
+   - Variance [plot](/data/kriging_variance.png) visualizes interpolation uncertainty over region
+ - Kriging result overlaid over dynamic map on [web page](https://nbpub.github.io/AQI_Map/)
+   - Mapping and tiles provided by [Leaflet](https://leafletjs.com/) and [OpenStreetMap](https://www.openstreetmap.org/)
+   - page hosted by [Github Pages](https://pages.github.com/)
+ - Data and image overlays updated via [Github Actions](https://github.com/NBPub/AQI_Map)
+   - currently every hour, may stop or change in the future
 	 
 	 
 	 
@@ -23,24 +38,7 @@ Notes for automating code via Github Actions
 
 ### Python Requirements
 
-**See [requirements.txt](/requirements.txt) for full list**
-  - [requests](https://requests.readthedocs.io/en/latest/)
-  - [NumPy](https://numpy.org/doc/stable/)
-  - [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/intro/)
-  - [matplotlib](https://matplotlib.org/stable/)
-  - [PyKrige](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/)
-  - **remote use only**
-    - [pytz](https://pythonhosted.org/pytz/)
-  - **local use only**
-    - [python-dotenv](https://github.com/theskumar/python-dotenv)
+
   
 ### Environment Variables
 
-See example [.env](/example.env) file for information about the three required environment variables. 
-They are stored and used as secrets on this repository, although only the API key will be kept private 
-in the resulting webpage.
-
- - api_key
- - geo_bbox
- - variogram_model
- - local_time
