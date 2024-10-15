@@ -67,7 +67,7 @@ in the resulting webpage. A `.env` file is required for local use.
    - how to select a model [example](/docs#variogram-model-selection), anecdotally . . . 
      - `hole-effect` works best for the current page's bounds `-121.74, -120.78, 43.63, 44.42`, smaller region
 	 - `gaussian` or `exponential` work best for the coordinate bounds listed in the example file, larger region
- - ****local_time**
+ - **local_time**
    - specify a [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) to convert from UTC
    - only needed when running on a repository, code changes [required](/docs#required) for local use
 

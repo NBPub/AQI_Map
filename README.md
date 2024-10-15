@@ -23,7 +23,7 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
    - Variance [plot](/data/kriging_variance.png) visualizes interpolation uncertainty over region
  - Kriging result overlaid over dynamic map on [web page](/index.html)
    - Mapping and tiles provided by [Leaflet](https://leafletjs.com/) and [OpenStreetMap](https://www.openstreetmap.org/)
-   - Hosted using [Github Pages](https://pages.github.com/)
+   - [Hosted](https://nbpub.github.io/AQI_Map/) using [Github Pages](https://pages.github.com/)
  - Data and image overlays updated via [Github Actions](https://github.com/NBPub/AQI_Map)
    - Currently every hour, may stop or change in the future
 	 
