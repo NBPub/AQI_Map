@@ -4,10 +4,10 @@ This repository is used to host a demo page for an AQI Map, and for now, is cont
 It is currently set within [Central Oregon](https://en.wikipedia.org/wiki/Central_Oregon), 
 but the code allows for any region to be specified by coordinate bounds.
 
-Detailed information is located in the [documentation](/docs) page.
+Detailed information is located in the [documentation](/docs#aqi-map-documentation) page.
 
  - [Motivation](/#motivation)
- - [Overview](/#motivation)
+ - [Overview](/#overview)
  
 ## Motivation
 
@@ -30,15 +30,3 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
  - Data and image overlays updated via [Github Actions](https://github.com/NBPub/AQI_Map)
    - currently every hour, may stop or change in the future
 	 
-	 
-	 
-## Actions
-
-Notes for automating code via Github Actions
-
-### Python Requirements
-
-
-  
-### Environment Variables
-

@@ -1,15 +1,15 @@
 # AQI Map Documentation
 
 **Contents**
- - [Usage](/#usage)
-   - [Workflow](/#workflow)
-   - [Requirements](/#python-requirements)
-   - [Environment Variables](/#environment-variables)
-   - [Run Locally](/#local-use)
- - [Kriging](/#ordinary-kriging)
-   - [Variogram Models](/#variogram-model-selection)
- - [Web Page](/web-page)
-   - [LeafletJS](/leafletjs)
+ - [Usage](/docs#usage)
+   - [Workflow](/docs#workflow)
+   - [Requirements](/docs#python-requirements)
+   - [Environment Variables](/docs#environment-variables)
+   - [Run Locally](/docs#local-use)
+ - [Kriging](/docs#kriging)
+   - [Variogram Models](/docs#variogram-model-selection)
+ - [Web Page](/docs#web-page)
+   - [LeafletJS](/docs#leafletjs)
    
    
 ## Usage
@@ -59,7 +59,7 @@ in the resulting webpage. A `.env` file is required for local use.
    - [API Docs](https://api.purpleair.com/#api-welcome-using-api-keys)
  - geo_bbox
    - geographical coordinates specify which sensors to query and the extent of the map coloring
-   - format: `<lng1>, <lng2>, <lat1>, <lat2>
+   - format: `<lng1>, <lng2>, <lat1>, <lat2>`
  - variogram_model
    - variogram model used for Ordinary Kriging, see PyKrige [documentation](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/generated/pykrige.ok.OrdinaryKriging.html#pykrige.ok.OrdinaryKriging)
    - an example for how to select a model is provided [below](/#)
@@ -92,6 +92,7 @@ environment, [`venv`](https://docs.python.org/3/library/venv.html), is recommend
 
 <details><summary>Saving data from API call</summary> 
 ```python
+
 # . . .  API call request stored as "r"
 data = r.json()['data']
 
@@ -107,11 +108,13 @@ for sens in data:
 }
 with open(Path('data','sensors.json'), 'w') as file:
 	json.dump(sensors, file)
+	
 ```
 </details>
 
 <details><summary>File modified check</summary> 
 ```python
+
 if Path('data','sensors.json').exists():
 	last_load = datetime.datetime.fromtimestamp(Path('data','sensors.json').stat().st_mtime)
 	time_since = datetime.datetime.now() - last_load
@@ -126,6 +129,7 @@ else:
 		sensors = json.load(file)
 
 # finish preparing data for template
+
 ```
 
 </details>
@@ -133,12 +137,12 @@ else:
 
 ## Kriging
 
-Resources: [wikipedia](https://en.wikipedia.org/wiki/Kriging) | [Columbia Public Health](https://www.publichealth.columbia.edu/research/population-health-methods/kriging-interpolation)
-
 Each sensor's PM2.5 concentration (30 minute average) is [converted](/scripts/aqi_calc.py) to an AQI value, 
 and then Kriging provides AQI interpolation over the geographical region specified. PyKrige is used for 
 [Ordinary Kriging](https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/generated/pykrige.ok.OrdinaryKriging.html#pykrige.ok.OrdinaryKriging) 
 calculation.
+
+Resources: [Wikipedia](https://en.wikipedia.org/wiki/Kriging) | [Columbia Public Health](https://www.publichealth.columbia.edu/research/population-health-methods/kriging-interpolation)
 
 ### Variogram Model Selection
 
@@ -150,6 +154,7 @@ It can also be useful to compare the resulting variance plots.
 
 <details><summary>Kriging model evaluation, example with statistics</summary> 
 ```python
+
 # evaluate variogram model statistics, per docs:
 # "ideally Q1 is close to zero, Q2 is close to 1, and cR is as small as possible"
 
@@ -163,6 +168,7 @@ for vm in ['linear', 'power', 'gaussian', 'spherical', 'exponential', 'hole-effe
     print('\t',vm)
     OK.print_statistics()
     print()
+	
 ```
 
 </details>
