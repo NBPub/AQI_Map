@@ -25,5 +25,5 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
    - Mapping and tiles provided by [Leaflet](https://leafletjs.com/) and [OpenStreetMap](https://www.openstreetmap.org/)
    - [Hosted](https://nbpub.github.io/AQI_Map/) using [Github Pages](https://pages.github.com/)
  - Data and image overlays updated via [Github Actions](https://github.com/NBPub/AQI_Map)
-   - Currently every half hour, may stop or change in the future
+   - Currently every 15 minutes, may stop or change in the future
 	 
