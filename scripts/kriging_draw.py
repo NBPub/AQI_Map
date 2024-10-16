@@ -1,11 +1,12 @@
 from pathlib import Path
 import numpy as np
+import json
 from pykrige.ok import OrdinaryKriging
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 
 
-def draw_kriging(sensor_data, geo_bbox, model):
+def draw_kriging(sensor_data, geo_bbox, model, time_text):
     # darkmagenta (AQI>300) should technically be maroon
     aqi_cmap = LinearSegmentedColormap.from_list(
         name='aqi_cmap', 
@@ -31,6 +32,31 @@ def draw_kriging(sensor_data, geo_bbox, model):
     
     plt.savefig(Path('data','kriging.png'), 
                 bbox_inches='tight', transparent=True)
+                
+    # save kriging history for future functionality
+    for img in Path('data','kriging_history').iterdir():
+        if int(img.stem) == 5:
+            img.unlink()
+        else:
+            new_name = f'{int(img.stem)+1}.png'
+            img.rename(Path(img.parent), new_name)
+  
+    plt.savefig(Path('data','kriging_history','0.png'),
+                bbox_inches='tight', transparent=True)
+    
+    # kriging image timestamps          
+    if Path('data','kriging_timestamps.json').exists():
+        with open(Path('data','kriging_timestamps.json'), 'r') as file:
+            old_history = json.load(file)
+        history = {int(key)+1:old_history[key] 
+                   for key in old_history.keys() 
+                   if int(key) < 5}
+    else:
+        history = {}
+    history[0] = time_text
+    with open(Path('data','kriging_timestamps.json'), 'w') as file:
+        json.dump(history,file)
+
                
     # save variance plot, std dev --> np.sqrt(np.abs(sigmasq))
     plt.imshow(sigmasq, origin='lower', extent=geo_bbox)
