@@ -72,7 +72,7 @@ def collect_data():
     }
 
     # generate Kriging Graph from AQI sensors
-    draw_kriging(sensor_data, geo_bbox, model=variogram_model, 
-                 retrieved.split(' ')[1][:5])  
+    draw_kriging(sensor_data, geo_bbox, variogram_model, 
+                 retrieved.split(' ')[1][:5]) 
     
     return sensor_data, len(d), retrieved, geo_bbox, variogram_model
