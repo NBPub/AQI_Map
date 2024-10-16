@@ -39,7 +39,7 @@ def draw_kriging(sensor_data, geo_bbox, model, time_text):
             img.unlink()
         else:
             new_name = f'{int(img.stem)+1}.png'
-            img.rename(Path(img.parent), new_name)
+            img.rename(Path(img.parent, new_name))
   
     plt.savefig(Path('data','kriging_history','0.png'),
                 bbox_inches='tight', transparent=True)
