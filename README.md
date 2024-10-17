@@ -33,4 +33,5 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
    - JS button to change map image overlay figured out
    - need to also update top right time text with displayed image
    - image generation times working in JSON file, but are image renames working properly?
+     - renaming within loop is causing rewrites, reverse sort list or use intermediate names/folders
 	 
