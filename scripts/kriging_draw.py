@@ -35,12 +35,11 @@ def draw_kriging(sensor_data, geo_bbox, model, time_text):
                 
     # save kriging history for future functionality
     for img in Path('data','kriging_history').iterdir():
-        if int(img.stem) == 5:
+        new_name = f'{int(img.stem)+1}.png'
+        img.rename(Path(img.parent, new_name))
+    for img in Path('data','kriging_history').iterdir():
+        if int(img.stem) > 5:
             img.unlink()
-        else:
-            new_name = f'{int(img.stem)+1}.png'
-            img.rename(Path(img.parent, new_name))
-  
     plt.savefig(Path('data','kriging_history','0.png'),
                 bbox_inches='tight', transparent=True)
     
