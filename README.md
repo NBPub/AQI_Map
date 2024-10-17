@@ -30,8 +30,8 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
 ## Up Next
 
  - Provide functionality to cycle through recent Kriging images
-   - JS button to change map image overlay figured out
-   - need to also update top right time text with displayed image
-   - image generation times working in JSON file, but are image renames working properly?
-     - renaming within loop is causing rewrites, reverse sort list or use intermediate names/folders
+   - use past kriging [images](/data/kriging_history) and [timestamps](/data/kriging_timestamps.json)'
+   - javascript functions to:
+     - use one button to cycle, another to return to current. 
+	 - label timestamp of overlaid image on map.
 	 

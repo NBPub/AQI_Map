@@ -36,7 +36,7 @@ def draw_kriging(sensor_data, geo_bbox, model, time_text):
     # save kriging history for future functionality
     imgs = sorted(Path('data','kriging_history').glob('*.png'))[::-1]
     for img in imgs:
-        if int(img.stem) >= 5:
+        if int(img.stem) >= 9:
             img.unlink()
         else:
             img.rename(Path(img.parent,
@@ -50,7 +50,7 @@ def draw_kriging(sensor_data, geo_bbox, model, time_text):
             old_history = json.load(file)
         history = {int(key)+1:old_history[key] 
                    for key in old_history.keys() 
-                   if int(key) < 5}
+                   if int(key) < 9}
     else:
         history = {}
     history[0] = time_text
