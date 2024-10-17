@@ -8,10 +8,14 @@
  - [Run Locally](/docs#local-use)
    - [Required Changes](/docs#required-modifications)
    - [Recommended Changes](/docs#recommended-modifications)
- - [Kriging](/docs#kriging)
-   - [Variogram Models](/docs#variogram-model-selection)
  - [Web Page](/docs#web-page)
    - [LeafletJS](/docs#leafletjs)
+   - [AQI History](/docs#aqi-history)
+ - [Kriging](/docs#kriging)
+   - [Variogram Models](/docs#variogram-model-selection)
+     - [Central Oregon Example](/docs#central-oregon-model-comparison)
+	 - [Oregon Example](/docs#oregon-model-comparison)
+
    
    
 ## Usage
@@ -142,6 +146,23 @@ else:
 # finish preparing data for template
 ```
 
+## Web Page
+
+Data and graphs are written into a static HTML [page](/index.html) using [Jinja2](https://jinja.palletsprojects.com/en/), 
+see the map writing [script](/map_write.py) and the [template](/templates/map_template.html). The resulting 
+web page is [hosted](https://nbpub.github.io/AQI_Map/) on the repository using [Github Pages](https://pages.github.com/) depolyment.
+
+### LeafletJS
+
+[LeafletJS](https://leafletjs.com/) is used to embed and extend [OpenStreetMap](https://www.openstreetmap.org/) tiles. 
+The kriging interpolation is overlaid on the map tiles, sensor data is included as [circle markers](https://leafletjs.com/reference.html#circlemarker), 
+an AQI [colorbar](https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/static/colorbar.png) is provided, 
+and a [plugin](https://github.com/ardhi/Leaflet.MousePosition) is used to display mouse position coordinates on the upper right corner.
+
+### AQI History
+
+*to be added*
+
 ## Kriging
 
 Each sensor's PM2.5 concentration (30 minute average) is [converted](/scripts/aqi_calc.py) to an AQI value, 
@@ -177,17 +198,29 @@ for vm in ['linear', 'power', 'gaussian', 'spherical', 'exponential', 'hole-effe
     print()
 ```
 
+#### Central Oregon Model Comparison
 
+*Results are not definitive and depend on the data's distribution at a given time*
 
-## Web Page
+| Variogram Model | Kriging Result | √ Variance |
+|-----------------|----------------|----------|
+| linear | ![](/docs/variogram_model_images/co_linear.png) | ![](/docs/variogram_model_images/co_linear_sd.png) |
+| power | ![](/docs/variogram_model_images/co_power.png) | ![](/docs/variogram_model_images/co_power_sd.png) |
+| gaussian | ![](/docs/variogram_model_images/co_gaussian.png) | ![](/docs/variogram_model_images/co_gaussian_sd.png) |
+| spherical | ![](/docs/variogram_model_images/co_spherical.png) | ![](/docs/variogram_model_images/co_spherical_sd.png) |
+| exponential | ![](/docs/variogram_model_images/co_exponential.png) | ![](/docs/variogram_model_images/co_exponential_sd.png) |
+|  hole-effect | ![](/docs/variogram_model_images/co_hole-effect.png) | ![](/docs/variogram_model_images/co_hole-effect_sd.png) |
 
-Data and graphs are written into a static HTML [page](/index.html) using [Jinja2](https://jinja.palletsprojects.com/en/), 
-see the map writing [script](/map_write.py) and the [template](/templates/map_template.html). The resulting 
-web page is [hosted](https://nbpub.github.io/AQI_Map/) on the repository using [Github Pages](https://pages.github.com/) depolyment.
+#### Oregon Model Comparison
 
-### LeafletJS
+*Results are not definitive and depend on the data's distribution at a given time*
 
-[LeafletJS](https://leafletjs.com/) is used to embed and extend [OpenStreetMap](https://www.openstreetmap.org/) tiles. 
-The kriging interpolation is overlaid on the map tiles, sensor data is included as [circle markers](https://leafletjs.com/reference.html#circlemarker), 
-an AQI [colorbar](https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/static/colorbar.png) is provided, 
-and a [plugin](https://github.com/ardhi/Leaflet.MousePosition) is used to display mouse position coordinates on the upper right corner.
+| Variogram Model | Kriging Result | √ Variance |
+|-----------------|----------------|----------|
+| linear | ![](/docs/variogram_model_images/or_linear.png) | ![](/docs/variogram_model_images/or_linear_sd.png) |
+| power | ![](/docs/variogram_model_images/or_power.png) | ![](/docs/variogram_model_images/or_power_sd.png) |
+| gaussian | ![](/docs/variogram_model_images/or_gaussian.png) | ![](/docs/variogram_model_images/or_gaussian_sd.png) |
+| spherical | ![](/docs/variogram_model_images/or_spherical.png) | ![](/docs/variogram_model_images/or_spherical_sd.png) |
+| exponential | ![](/docs/variogram_model_images/or_exponential.png) | ![](/docs/variogram_model_images/or_exponential_sd.png) |
+|  hole-effect | ![](/docs/variogram_model_images/or_hole-effect.png) | ![](/docs/variogram_model_images/or_hole-effect_sd.png) |
+
