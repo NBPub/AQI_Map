@@ -34,7 +34,7 @@ def draw_kriging(sensor_data, geo_bbox, model, time_text):
                 bbox_inches='tight', transparent=True)
                 
     # save kriging history for future functionality
-    imgs = sorted(Path('data','kriging_history'))[::-1]
+    imgs = sorted(Path('data','kriging_history').glob('*.png'))[::-1]
     for img in imgs:
         if int(img.stem) >= 5:
             img.unlink()

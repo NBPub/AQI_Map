@@ -177,14 +177,16 @@ External Resources: [Wikipedia](https://en.wikipedia.org/wiki/Kriging) | [Columb
 Different variogram models are available for `OrdinaryKriging`, and the ideal selection depends 
 on the sensor data and extent of the region. It may change as the data changes. The kriging fit can be visualized, 
 `enable_plotting=True`, and statistics, `enable_statistics=True`, can be returned to evaluate various models.
-It is also useful to compare their resulting [variance plots](https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_variance.png).
+It is also useful to compare their resulting [variance plots](https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_variance.png). 
+Example plotting results are shown for [Central Oregon](/docs#central-oregon-model-comparison)) and [Oregon](/docs#oregon-model-comparison)) below.
 
 
 **Kriging model evaluation, example with statistics**
 
+> ideally Q1 is close to zero, Q2 is close to 1, and cR is as small as possible
+
 ```python
-# evaluate variogram model statistics, per docs:
-# "ideally Q1 is close to zero, Q2 is close to 1, and cR is as small as possible"
+# evaluate variogram model statistics
 
 for vm in ['linear', 'power', 'gaussian', 'spherical', 'exponential', 'hole-effect']:
     OK = OrdinaryKriging(
@@ -204,12 +206,12 @@ for vm in ['linear', 'power', 'gaussian', 'spherical', 'exponential', 'hole-effe
 
 | Variogram Model | Kriging Result | √ Variance |
 |-----------------|----------------|----------|
-| linear | ![](/docs/variogram_model_images/co_linear.png) | ![](/docs/variogram_model_images/co_linear_sd.png) |
-| power | ![](/docs/variogram_model_images/co_power.png) | ![](/docs/variogram_model_images/co_power_sd.png) |
-| gaussian | ![](/docs/variogram_model_images/co_gaussian.png) | ![](/docs/variogram_model_images/co_gaussian_sd.png) |
-| spherical | ![](/docs/variogram_model_images/co_spherical.png) | ![](/docs/variogram_model_images/co_spherical_sd.png) |
-| exponential | ![](/docs/variogram_model_images/co_exponential.png) | ![](/docs/variogram_model_images/co_exponential_sd.png) |
-|  hole-effect | ![](/docs/variogram_model_images/co_hole-effect.png) | ![](/docs/variogram_model_images/co_hole-effect_sd.png) |
+| linear `Q1 = 0.017, Q2 = 0.350, cR = 1174` | ![](/docs/variogram_model_images/co_linear.png) | ![](/docs/variogram_model_images/co_linear_sd.png) |
+| power `Q1 = 0.031, Q2 = 0.262, cR = 673` | ![](/docs/variogram_model_images/co_power.png) | ![](/docs/variogram_model_images/co_power_sd.png) |
+| gaussian `Q1 = 0.044, Q2 = 0.477, cR = 724` | ![](/docs/variogram_model_images/co_gaussian.png) | ![](/docs/variogram_model_images/co_gaussian_sd.png) |
+| spherical `Q1 = 0.055, Q2 = 0.474, cR = 547` | ![](/docs/variogram_model_images/co_spherical.png) | ![](/docs/variogram_model_images/co_spherical_sd.png) |
+| exponential `Q1 = 0.101, Q2 = 0.720, cR = 463` | ![](/docs/variogram_model_images/co_exponential.png) | ![](/docs/variogram_model_images/co_exponential_sd.png) |
+|  hole-effect `Q1 = 0.106, Q2 = 0.757, cR = 465` | ![](/docs/variogram_model_images/co_hole-effect.png) | ![](/docs/variogram_model_images/co_hole-effect_sd.png) |
 
 #### Oregon Model Comparison
 
@@ -217,10 +219,10 @@ for vm in ['linear', 'power', 'gaussian', 'spherical', 'exponential', 'hole-effe
 
 | Variogram Model | Kriging Result | √ Variance |
 |-----------------|----------------|----------|
-| linear | ![](/docs/variogram_model_images/or_linear.png) | ![](/docs/variogram_model_images/or_linear_sd.png) |
-| power | ![](/docs/variogram_model_images/or_power.png) | ![](/docs/variogram_model_images/or_power_sd.png) |
-| gaussian | ![](/docs/variogram_model_images/or_gaussian.png) | ![](/docs/variogram_model_images/or_gaussian_sd.png) |
-| spherical | ![](/docs/variogram_model_images/or_spherical.png) | ![](/docs/variogram_model_images/or_spherical_sd.png) |
-| exponential | ![](/docs/variogram_model_images/or_exponential.png) | ![](/docs/variogram_model_images/or_exponential_sd.png) |
-|  hole-effect | ![](/docs/variogram_model_images/or_hole-effect.png) | ![](/docs/variogram_model_images/or_hole-effect_sd.png) |
+| linear `Q1 = 0.196, Q2 = 2.95, cR = 3056` | ![](/docs/variogram_model_images/or_linear.png) | ![](/docs/variogram_model_images/or_linear_sd.png) |
+| power `Q1 = 0.125, Q2 = 1.60, cR = 1641` | ![](/docs/variogram_model_images/or_power.png) | ![](/docs/variogram_model_images/or_power_sd.png) |
+| gaussian `Q1 = 0.037 Q2 = 0.626, cR = 367` | ![](/docs/variogram_model_images/or_gaussian.png) | ![](/docs/variogram_model_images/or_gaussian_sd.png) |
+| spherical `Q1 = 0.056, Q2 = 0.825, cR = 415` | ![](/docs/variogram_model_images/or_spherical.png) | ![](/docs/variogram_model_images/or_spherical_sd.png) |
+| exponential `Q1 = 0.138, Q2 = 2.67, cR = 389` | ![](/docs/variogram_model_images/or_exponential.png) | ![](/docs/variogram_model_images/or_exponential_sd.png) |
+|  hole-effect `Q1 = 0.120, Q2 = 3.92, cR = 435` | ![](/docs/variogram_model_images/or_hole-effect.png) | ![](/docs/variogram_model_images/or_hole-effect_sd.png) |
 
