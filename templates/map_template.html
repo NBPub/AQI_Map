@@ -143,7 +143,7 @@
 		L.control.scale().addTo(map);
 	  
 	  <!-- Image overlay (AQI Ordinary Kriging) -->
-	  var imageUrl = 'data/kriging_history/0.png';
+	  var imageUrl = 'https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_history/0.png';
 	  var altText = 'predicted AQI from Purple Air sensor PM2.5 measurements'
 	  var latLngBounds = L.latLngBounds(
 		[[{{ geo_bbox[2]-0.01 }}, {{ geo_bbox[0]-0.01 }}], [{{ geo_bbox[3]+0.01 }}, {{ geo_bbox[1]+0.01 }}]]
