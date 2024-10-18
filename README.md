@@ -31,7 +31,6 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
 
  - Provide functionality to cycle through recent Kriging images
    - use past kriging [images](/data/kriging_history) and [timestamps](/data/kriging_timestamps.json)'
-   - javascript functions to:
-     - use one button to cycle, another to return to current. 
-	 - label timestamp of overlaid image on map.
+ - success with forward and back buttons ?
+   
 	 

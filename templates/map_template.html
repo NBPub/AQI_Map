@@ -56,7 +56,10 @@
 	  </div>
 	</h1>
     <div>
-	  <center >AQI over time<button onClick="krig_change();" style="margin-left:10px;">&#8986;</button></center>
+	  <center >AQI over time 
+	    <button onClick="krig_change('back');" style="margin-left:10px;">&#9668;&nbsp;</button>
+	    <button onClick="krig_change('forward');" style="margin-left:10px;">&nbsp;&#9658;</button>
+	  </center>
 	</div>
 	<div id="map"></div>
 	<div>
@@ -103,20 +106,27 @@
 	
 	<!-- Kriging image change function -->
 	<script>
-	  async function krig_change() {
+	  async function krig_change(direction) {
 		const current =  parseInt(document.getElementsByClassName("leaflet-image-layer")[0].src.charAt(85));
 		const url = "https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_timestamps.json";
 		const response = await fetch(url);
 		const json = await response.json();
 		const img_url_base = "https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_history/";
 		
-		console.log(current);
-		if (current<9) {
-		  next_img = current+1;
+		if (direction == "back") {
+		  if (current < 9) {
+		    next_img = current+1;
+		  } else {
+		    next_img = 0;
+		  }
 		} else {
-		  next_img = 0;
+		  if (current == 0) {
+		    next_img = 9;
+		  } else {
+		    next_img = current-1;
+		  }
 		}
-		 
+		
 		document.getElementById("krig_time").innerHTML=json[next_img];
 		document.getElementsByClassName("leaflet-image-layer")[0].src=img_url_base.concat(next_img.toString(), '.png');
     }  
