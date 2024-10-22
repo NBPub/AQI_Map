@@ -168,12 +168,9 @@ cbar.addTo(map);
 	    position:"topright", separator:", ", emptyString:" ",
 		numDigits:3,
 }).addTo(map);
-
-	  <!-- Add sensor information -->
-	  {% for circle in circles %}
-	    {{ circle|safe }}
-	  {% endfor %}
-	  
+	  <!-- old circle method {% for circle in circles %}{{ circle|safe }}{% endfor %}
 	</script>
+	<!-- Add sensor information -->
+	<script id="markers_js" src="./data/markers_history/0.js"></script>
   </body>
 </html>

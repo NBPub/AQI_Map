@@ -26,11 +26,7 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
    - [Hosted](https://nbpub.github.io/AQI_Map/) using [Github Pages](https://pages.github.com/)
  - Data and image overlays updated via [Github Actions](https://github.com/NBPub/AQI_Map)
    - Currently every 20 minutes
-   
-## Up Next
-
- - Provide functionality to cycle through recent Kriging images
-   - use past kriging [images](/data/kriging_history) and [timestamps](/data/kriging_timestamps.json)'
- - success with forward and back buttons ?
+   - Page allows browsing previous 9 kriging results (previous ~3 hours)
+   - *working to update sensor marker data with kriging results*
    
 	 
