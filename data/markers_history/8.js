@@ -2,7 +2,7 @@
   var circle = L.circleMarker([44.037724, -121.19634], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Gosney Meadows | <b>13</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.037724/-121.19634'>Purple Air 2661</a>");
+  }).addTo(map).bindPopup("Gosney Meadows | <b>12</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.037724/-121.19634'>Purple Air 2661</a>");
 
   var circle = L.circleMarker([44.026516, -121.32124], {
 	color: "#008000", fillColor:"#008000", 
@@ -17,7 +17,7 @@
   var circle = L.circleMarker([44.052723, -121.33519], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("West Bend Village | <b>11</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.052723/-121.33519'>Purple Air 14473</a>");
+  }).addTo(map).bindPopup("West Bend Village | <b>12</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.052723/-121.33519'>Purple Air 14473</a>");
 
   var circle = L.circleMarker([43.84786, -121.43234], {
 	color: "#008000", fillColor:"#008000", 
@@ -42,7 +42,7 @@
   var circle = L.circleMarker([44.2352, -121.47917], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Bass Ln Sisters Area | <b>9</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.2352/-121.47917'>Purple Air 45947</a>");
+  }).addTo(map).bindPopup("Bass Ln Sisters Area | <b>8</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.2352/-121.47917'>Purple Air 45947</a>");
 
   var circle = L.circleMarker([43.978367, -121.21503], {
 	color: "#008000", fillColor:"#008000", 
@@ -52,17 +52,17 @@
   var circle = L.circleMarker([44.038685, -121.377], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Phil's | <b>10</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.038685/-121.377'>Purple Air 62491</a>");
+  }).addTo(map).bindPopup("Phil's | <b>9</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.038685/-121.377'>Purple Air 62491</a>");
 
   var circle = L.circleMarker([44.184704, -121.30465], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("WHT-Out | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.184704/-121.30465'>Purple Air 63541</a>");
+  }).addTo(map).bindPopup("WHT-Out | <b>18</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.184704/-121.30465'>Purple Air 63541</a>");
 
   var circle = L.circleMarker([44.065445, -121.359276], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("NWX Discovery Park | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.065445/-121.359276'>Purple Air 70123</a>");
+  }).addTo(map).bindPopup("NWX Discovery Park | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.065445/-121.359276'>Purple Air 70123</a>");
 
   var circle = L.circleMarker([44.284626, -121.54525], {
 	color: "#008000", fillColor:"#008000", 
@@ -72,7 +72,7 @@
   var circle = L.circleMarker([44.29389, -121.61137], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Sisters Dream Inn | <b>14</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.29389/-121.61137'>Purple Air 76779</a>");
+  }).addTo(map).bindPopup("Sisters Dream Inn | <b>13</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.29389/-121.61137'>Purple Air 76779</a>");
 
   var circle = L.circleMarker([44.315884, -121.2453], {
 	color: "#008000", fillColor:"#008000", 
@@ -82,17 +82,17 @@
   var circle = L.circleMarker([44.002785, -121.678116], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Mt Bachelor - West Village Lodge | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.002785/-121.678116'>Purple Air 78401</a>");
+  }).addTo(map).bindPopup("Mt Bachelor - West Village Lodge | <b>15</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.002785/-121.678116'>Purple Air 78401</a>");
 
   var circle = L.circleMarker([44.02029, -121.35668], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Sunrise Village | <b>10</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02029/-121.35668'>Purple Air 80333</a>");
+  }).addTo(map).bindPopup("Sunrise Village | <b>9</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02029/-121.35668'>Purple Air 80333</a>");
 
   var circle = L.circleMarker([44.248917, -120.82577], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Pirate Radio | <b>23</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.248917/-120.82577'>Purple Air 82047</a>");
+  }).addTo(map).bindPopup("Pirate Radio | <b>22</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.248917/-120.82577'>Purple Air 82047</a>");
 
   var circle = L.circleMarker([44.266136, -121.308136], {
 	color: "#008000", fillColor:"#008000", 
@@ -107,17 +107,17 @@
   var circle = L.circleMarker([43.89365, -121.43611], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Circle 4, Sunriver OR | <b>9</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.89365/-121.43611'>Purple Air 82829</a>");
+  }).addTo(map).bindPopup("Circle 4, Sunriver OR | <b>10</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.89365/-121.43611'>Purple Air 82829</a>");
 
   var circle = L.circleMarker([44.11531, -121.28478], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("North pointe | <b>26</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.11531/-121.28478'>Purple Air 85387</a>");
+  }).addTo(map).bindPopup("North pointe | <b>27</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.11531/-121.28478'>Purple Air 85387</a>");
 
   var circle = L.circleMarker([44.06518, -121.325325], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("NW Roanoke Ave &amp; NW 9th St | <b>14</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.06518/-121.325325'>Purple Air 86237</a>");
+  }).addTo(map).bindPopup("NW Roanoke Ave &amp; NW 9th St | <b>13</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.06518/-121.325325'>Purple Air 86237</a>");
 
   var circle = L.circleMarker([44.18554, -121.16575], {
 	color: "#008000", fillColor:"#008000", 
@@ -147,7 +147,7 @@
   var circle = L.circleMarker([44.10175, -121.285545], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Tristar Dr | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.10175/-121.285545'>Purple Air 91077</a>");
+  }).addTo(map).bindPopup("Tristar Dr | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.10175/-121.285545'>Purple Air 91077</a>");
 
   var circle = L.circleMarker([44.049816, -121.34051], {
 	color: "#008000", fillColor:"#008000", 
@@ -157,12 +157,12 @@
   var circle = L.circleMarker([44.02093, -121.33463], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Southwest Bend, OR | <b>10</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02093/-121.33463'>Purple Air 94141</a>");
+  }).addTo(map).bindPopup("Southwest Bend, OR | <b>12</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02093/-121.33463'>Purple Air 94141</a>");
 
   var circle = L.circleMarker([44.076866, -121.3659], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("NW Mehama Dr | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.076866/-121.3659'>Purple Air 96261</a>");
+  }).addTo(map).bindPopup("NW Mehama Dr | <b>18</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.076866/-121.3659'>Purple Air 96261</a>");
 
   var circle = L.circleMarker([44.043556, -121.28777], {
 	color: "#008000", fillColor:"#008000", 
@@ -172,7 +172,7 @@
   var circle = L.circleMarker([44.3056, -120.848305], {
 	color: "#FFFF00", fillColor:"#FFFF00", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Parr Lumber | <b>52</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.3056/-120.848305'>Purple Air 96509</a>");
+  }).addTo(map).bindPopup("Parr Lumber | <b>56</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.3056/-120.848305'>Purple Air 96509</a>");
 
   var circle = L.circleMarker([44.155827, -121.37766], {
 	color: "#008000", fillColor:"#008000", 
@@ -187,22 +187,22 @@
   var circle = L.circleMarker([44.062977, -121.31565], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Wolverine | <b>20</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.062977/-121.31565'>Purple Air 99623</a>");
+  }).addTo(map).bindPopup("Wolverine | <b>19</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.062977/-121.31565'>Purple Air 99623</a>");
 
   var circle = L.circleMarker([44.039516, -121.36373], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Tartan Druim | <b>31</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.039516/-121.36373'>Purple Air 103888</a>");
+  }).addTo(map).bindPopup("Tartan Druim | <b>33</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.039516/-121.36373'>Purple Air 103888</a>");
 
   var circle = L.circleMarker([44.076893, -121.32952], {
 	color: "#FF0000", fillColor:"#FF0000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Awbrey Summit | <b>185</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.076893/-121.32952'>Purple Air 108272</a>");
+  }).addTo(map).bindPopup("Awbrey Summit | <b>174</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.076893/-121.32952'>Purple Air 108272</a>");
 
   var circle = L.circleMarker([44.02689, -121.3454], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Meadowbrook | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02689/-121.3454'>Purple Air 108688</a>");
+  }).addTo(map).bindPopup("Meadowbrook | <b>14</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02689/-121.3454'>Purple Air 108688</a>");
 
   var circle = L.circleMarker([43.89665, -121.41618], {
 	color: "#008000", fillColor:"#008000", 
@@ -212,7 +212,7 @@
   var circle = L.circleMarker([44.024303, -121.3215], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Dunvegan | <b>26</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.024303/-121.3215'>Purple Air 110552</a>");
+  }).addTo(map).bindPopup("Dunvegan | <b>25</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.024303/-121.3215'>Purple Air 110552</a>");
 
   var circle = L.circleMarker([44.07028, -121.295654], {
 	color: "#008000", fillColor:"#008000", 
@@ -242,7 +242,7 @@
   var circle = L.circleMarker([44.13314, -121.33061], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Cascades Academy | <b>6</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.13314/-121.33061'>Purple Air 113728</a>");
+  }).addTo(map).bindPopup("Cascades Academy | <b>4</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.13314/-121.33061'>Purple Air 113728</a>");
 
   var circle = L.circleMarker([44.27477, -121.31081], {
 	color: "#008000", fillColor:"#008000", 
@@ -262,7 +262,7 @@
   var circle = L.circleMarker([44.058205, -121.34308], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Bend NWX Hartford outside | <b>0</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.058205/-121.34308'>Purple Air 115921</a>");
+  }).addTo(map).bindPopup("Bend NWX Hartford outside | <b>1</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.058205/-121.34308'>Purple Air 115921</a>");
 
   var circle = L.circleMarker([43.997868, -121.387825], {
 	color: "#008000", fillColor:"#008000", 
@@ -272,12 +272,12 @@
   var circle = L.circleMarker([44.13861, -121.23284], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Jeff Bowman | <b>4</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.13861/-121.23284'>Purple Air 115949</a>");
+  }).addTo(map).bindPopup("Jeff Bowman | <b>3</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.13861/-121.23284'>Purple Air 115949</a>");
 
   var circle = L.circleMarker([43.751858, -121.5241], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Snowberry, La Pine | <b>18</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.751858/-121.5241'>Purple Air 115953</a>");
+  }).addTo(map).bindPopup("Snowberry, La Pine | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.751858/-121.5241'>Purple Air 115953</a>");
 
   var circle = L.circleMarker([44.005157, -121.38495], {
 	color: "#008000", fillColor:"#008000", 
@@ -302,7 +302,7 @@
   var circle = L.circleMarker([44.310143, -121.5892], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Pommel2 | <b>14</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.310143/-121.5892'>Purple Air 121065</a>");
+  }).addTo(map).bindPopup("Pommel2 | <b>13</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.310143/-121.5892'>Purple Air 121065</a>");
 
   var circle = L.circleMarker([44.084045, -121.342834], {
 	color: "#008000", fillColor:"#008000", 
@@ -327,7 +327,7 @@
   var circle = L.circleMarker([44.256905, -121.18268], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Deschutes Public Library - Redmond Temp - Outdoor | <b>14</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.256905/-121.18268'>Purple Air 148667</a>");
+  }).addTo(map).bindPopup("Deschutes Public Library - Redmond Temp - Outdoor | <b>15</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.256905/-121.18268'>Purple Air 148667</a>");
 
   var circle = L.circleMarker([44.057186, -121.316345], {
 	color: "#008000", fillColor:"#008000", 
@@ -337,37 +337,37 @@
   var circle = L.circleMarker([44.056347, -121.31722], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Deschutes Public Library - Admin - Outdoor | <b>14</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.056347/-121.31722'>Purple Air 148761</a>");
+  }).addTo(map).bindPopup("Deschutes Public Library - Admin - Outdoor | <b>13</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.056347/-121.31722'>Purple Air 148761</a>");
 
   var circle = L.circleMarker([43.674515, -121.50444], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Deschutes Public Library - La Pine - Outdoor | <b>31</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.674515/-121.50444'>Purple Air 148795</a>");
+  }).addTo(map).bindPopup("Deschutes Public Library - La Pine - Outdoor | <b>29</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.674515/-121.50444'>Purple Air 148795</a>");
 
   var circle = L.circleMarker([44.054043, -121.27064], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Deschutes Public Library - East Bend - Outdoor | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.054043/-121.27064'>Purple Air 148809</a>");
+  }).addTo(map).bindPopup("Deschutes Public Library - East Bend - Outdoor | <b>18</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.054043/-121.27064'>Purple Air 148809</a>");
 
   var circle = L.circleMarker([44.020348, -121.30922], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Murphy Rd | <b>46</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.020348/-121.30922'>Purple Air 149774</a>");
+  }).addTo(map).bindPopup("Murphy Rd | <b>44</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.020348/-121.30922'>Purple Air 149774</a>");
 
   var circle = L.circleMarker([44.01276, -121.33013], {
 	color: "#FFFF00", fillColor:"#FFFF00", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("BurkeHQ | <b>81</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.01276/-121.33013'>Purple Air 152022</a>");
+  }).addTo(map).bindPopup("BurkeHQ | <b>84</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.01276/-121.33013'>Purple Air 152022</a>");
 
   var circle = L.circleMarker([43.984104, -121.3452], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("DRW | <b>26</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.984104/-121.3452'>Purple Air 152138</a>");
+  }).addTo(map).bindPopup("DRW | <b>24</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.984104/-121.3452'>Purple Air 152138</a>");
 
   var circle = L.circleMarker([44.02952, -121.22026], {
-	color: "#008000", fillColor:"#008000", 
+	color: "#FFFF00", fillColor:"#FFFF00", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Lane_Knolls | <b>47</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02952/-121.22026'>Purple Air 152964</a>");
+  }).addTo(map).bindPopup("Lane_Knolls | <b>51</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.02952/-121.22026'>Purple Air 152964</a>");
 
   var circle = L.circleMarker([44.18597, -121.374756], {
 	color: "#008000", fillColor:"#008000", 
@@ -377,7 +377,7 @@
   var circle = L.circleMarker([44.122177, -121.320854], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Sunset | <b>7</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.122177/-121.320854'>Purple Air 153963</a>");
+  }).addTo(map).bindPopup("Sunset | <b>6</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.122177/-121.320854'>Purple Air 153963</a>");
 
   var circle = L.circleMarker([43.791542, -120.94099], {
 	color: "#008000", fillColor:"#008000", 
@@ -392,7 +392,7 @@
   var circle = L.circleMarker([44.0873, -121.27787], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Marsh Orchid Dr. | <b>12</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.0873/-121.27787'>Purple Air 154645</a>");
+  }).addTo(map).bindPopup("Marsh Orchid Dr. | <b>11</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.0873/-121.27787'>Purple Air 154645</a>");
 
   var circle = L.circleMarker([44.091827, -121.25517], {
 	color: "#008000", fillColor:"#008000", 
@@ -417,7 +417,7 @@
   var circle = L.circleMarker([44.321606, -121.52394], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Omaha Road | <b>7</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.321606/-121.52394'>Purple Air 155427</a>");
+  }).addTo(map).bindPopup("Omaha Road | <b>8</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.321606/-121.52394'>Purple Air 155427</a>");
 
   var circle = L.circleMarker([44.01191, -121.34879], {
 	color: "#008000", fillColor:"#008000", 
@@ -427,27 +427,22 @@
   var circle = L.circleMarker([44.06829, -121.35864], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Summerhill Dr | <b>19</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.06829/-121.35864'>Purple Air 160419</a>");
+  }).addTo(map).bindPopup("Summerhill Dr | <b>21</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.06829/-121.35864'>Purple Air 160419</a>");
 
   var circle = L.circleMarker([43.985416, -121.36081], {
 	color: "#FFFF00", fillColor:"#FFFF00", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("DRW#1 | <b>87</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.985416/-121.36081'>Purple Air 161965</a>");
+  }).addTo(map).bindPopup("DRW#1 | <b>86</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.985416/-121.36081'>Purple Air 161965</a>");
 
   var circle = L.circleMarker([44.057884, -121.33091], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
   }).addTo(map).bindPopup("River West | <b>28</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.057884/-121.33091'>Purple Air 162573</a>");
 
-  var circle = L.circleMarker([44.009804, -121.17879], {
-	color: "#008000", fillColor:"#008000", 
-	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("1880 Ranch | <b>9</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.009804/-121.17879'>Purple Air 162615</a>");
-
   var circle = L.circleMarker([44.09897, -121.270676], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("JS home | <b>21</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.09897/-121.270676'>Purple Air 164589</a>");
+  }).addTo(map).bindPopup("JS home | <b>20</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.09897/-121.270676'>Purple Air 164589</a>");
 
   var circle = L.circleMarker([43.82413, -121.491295], {
 	color: "#008000", fillColor:"#008000", 
@@ -457,7 +452,7 @@
   var circle = L.circleMarker([43.813164, -121.48258], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Gross Dr | <b>24</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.813164/-121.48258'>Purple Air 166121</a>");
+  }).addTo(map).bindPopup("Gross Dr | <b>22</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.813164/-121.48258'>Purple Air 166121</a>");
 
   var circle = L.circleMarker([44.374332, -121.641045], {
 	color: "#008000", fillColor:"#008000", 
@@ -477,7 +472,7 @@
   var circle = L.circleMarker([43.89229, -121.42138], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Modoc Lane | <b>11</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.89229/-121.42138'>Purple Air 181035</a>");
+  }).addTo(map).bindPopup("Modoc Lane | <b>10</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.89229/-121.42138'>Purple Air 181035</a>");
 
   var circle = L.circleMarker([44.03587, -121.3445], {
 	color: "#008000", fillColor:"#008000", 
@@ -487,7 +482,7 @@
   var circle = L.circleMarker([44.2435, -121.20689], {
 	color: "#FFFF00", fillColor:"#FFFF00", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("SouthHeights | <b>58</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.2435/-121.20689'>Purple Air 189421</a>");
+  }).addTo(map).bindPopup("SouthHeights | <b>57</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.2435/-121.20689'>Purple Air 189421</a>");
 
   var circle = L.circleMarker([44.29865, -120.89049], {
 	color: "#008000", fillColor:"#008000", 
@@ -497,12 +492,12 @@
   var circle = L.circleMarker([44.156403, -121.28533], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("NorthStar | <b>15</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.156403/-121.28533'>Purple Air 189471</a>");
+  }).addTo(map).bindPopup("NorthStar | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.156403/-121.28533'>Purple Air 189471</a>");
 
   var circle = L.circleMarker([44.195328, -121.28323], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Tumalo- Alliance Equestrian Center | <b>6</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.195328/-121.28323'>Purple Air 190411</a>");
+  }).addTo(map).bindPopup("Tumalo- Alliance Equestrian Center | <b>7</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.195328/-121.28323'>Purple Air 190411</a>");
 
   var circle = L.circleMarker([44.295628, -121.18417], {
 	color: "#008000", fillColor:"#008000", 
@@ -512,7 +507,7 @@
   var circle = L.circleMarker([44.066788, -121.329666], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Awbrey Dog Park Bend | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.066788/-121.329666'>Purple Air 190449</a>");
+  }).addTo(map).bindPopup("Awbrey Dog Park Bend | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.066788/-121.329666'>Purple Air 190449</a>");
 
   var circle = L.circleMarker([44.056957, -121.38984], {
 	color: "#008000", fillColor:"#008000", 
@@ -522,32 +517,32 @@
   var circle = L.circleMarker([44.07157, -121.25475], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("3015 NE RED OAK | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.07157/-121.25475'>Purple Air 191593</a>");
+  }).addTo(map).bindPopup("3015 NE RED OAK | <b>19</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.07157/-121.25475'>Purple Air 191593</a>");
 
   var circle = L.circleMarker([44.06105, -121.35018], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("NWX | <b>15</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.06105/-121.35018'>Purple Air 195521</a>");
+  }).addTo(map).bindPopup("NWX | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.06105/-121.35018'>Purple Air 195521</a>");
 
   var circle = L.circleMarker([44.061985, -121.297264], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("6&amp;Lafayette | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.061985/-121.297264'>Purple Air 198771</a>");
+  }).addTo(map).bindPopup("6&amp;Lafayette | <b>21</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.061985/-121.297264'>Purple Air 198771</a>");
 
   var circle = L.circleMarker([43.99156, -121.35589], {
 	color: "#ff8c00", fillColor:"#ff8c00", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Galen Rd | <b>117</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.99156/-121.35589'>Purple Air 207873</a>");
+  }).addTo(map).bindPopup("Galen Rd | <b>127</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.99156/-121.35589'>Purple Air 207873</a>");
 
   var circle = L.circleMarker([44.070145, -121.31003], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Lakeside Place | <b>9</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.070145/-121.31003'>Purple Air 223193</a>");
+  }).addTo(map).bindPopup("Lakeside Place | <b>8</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.070145/-121.31003'>Purple Air 223193</a>");
 
   var circle = L.circleMarker([44.11462, -121.278206], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Suterra | <b>13</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.11462/-121.278206'>Purple Air 223591</a>");
+  }).addTo(map).bindPopup("Suterra | <b>16</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.11462/-121.278206'>Purple Air 223591</a>");
 
   var circle = L.circleMarker([43.990192, -121.686745], {
 	color: "#008000", fillColor:"#008000", 
@@ -557,7 +552,7 @@
   var circle = L.circleMarker([44.00868, -121.32268], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Avion Water Company | <b>20</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.00868/-121.32268'>Purple Air 226331</a>");
+  }).addTo(map).bindPopup("Avion Water Company | <b>18</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.00868/-121.32268'>Purple Air 226331</a>");
 
   var circle = L.circleMarker([44.05894, -121.26958], {
 	color: "#008000", fillColor:"#008000", 
@@ -567,17 +562,17 @@
   var circle = L.circleMarker([43.903976, -121.43021], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Gray Birch | <b>6</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.903976/-121.43021'>Purple Air 226513</a>");
+  }).addTo(map).bindPopup("Gray Birch | <b>5</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.903976/-121.43021'>Purple Air 226513</a>");
 
   var circle = L.circleMarker([44.32571, -121.53744], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Meadow House | <b>22</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.32571/-121.53744'>Purple Air 227035</a>");
+  }).addTo(map).bindPopup("Meadow House | <b>21</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.32571/-121.53744'>Purple Air 227035</a>");
 
   var circle = L.circleMarker([44.04683, -121.28017], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Kitty Corner | <b>22</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.04683/-121.28017'>Purple Air 227093</a>");
+  }).addTo(map).bindPopup("Kitty Corner | <b>21</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.04683/-121.28017'>Purple Air 227093</a>");
 
   var circle = L.circleMarker([44.03484, -121.321106], {
 	color: "#008000", fillColor:"#008000", 
@@ -587,22 +582,27 @@
   var circle = L.circleMarker([43.834072, -121.47121], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Blue Heron | <b>25</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.834072/-121.47121'>Purple Air 229355</a>");
+  }).addTo(map).bindPopup("Blue Heron | <b>23</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.834072/-121.47121'>Purple Air 229355</a>");
 
   var circle = L.circleMarker([44.067917, -121.279854], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("North of Pilot Butte | <b>12</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.067917/-121.279854'>Purple Air 229833</a>");
+  }).addTo(map).bindPopup("North of Pilot Butte | <b>11</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.067917/-121.279854'>Purple Air 229833</a>");
 
   var circle = L.circleMarker([44.088905, -121.340965], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Bend UMTD | <b>2</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.088905/-121.340965'>Purple Air 229875</a>");
+  }).addTo(map).bindPopup("Bend UMTD | <b>1</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.088905/-121.340965'>Purple Air 229875</a>");
 
-  var circle = L.circleMarker([44.054363, -121.31776], {
+  var circle = L.circleMarker([44.17192, -121.32719], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("Wall Street Bungalow | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.054363/-121.31776'>Purple Air 231909</a>");
+  }).addTo(map).bindPopup("Healing Reins | <b>10</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.17192/-121.32719'>Purple Air 229915</a>");
+
+  var circle = L.circleMarker([44.054363, -121.31776], {
+	color: "#FFFF00", fillColor:"#FFFF00", 
+	fillOpacity:"0.5", radius:5,
+  }).addTo(map).bindPopup("Wall Street Bungalow | <b>53</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.054363/-121.31776'>Purple Air 231909</a>");
 
   var circle = L.circleMarker([44.09624, -121.30954], {
 	color: "#008000", fillColor:"#008000", 
@@ -617,12 +617,12 @@
   var circle = L.circleMarker([44.165318, -121.277885], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("MP out | <b>48</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.165318/-121.277885'>Purple Air 232541</a>");
+  }).addTo(map).bindPopup("MP out | <b>44</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.165318/-121.277885'>Purple Air 232541</a>");
 
   var circle = L.circleMarker([43.71915, -121.527664], {
 	color: "#FFFF00", fillColor:"#FFFF00", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("In the Pines Learning Center | <b>86</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.71915/-121.527664'>Purple Air 232677</a>");
+  }).addTo(map).bindPopup("In the Pines Learning Center | <b>80</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/43.71915/-121.527664'>Purple Air 232677</a>");
 
   var circle = L.circleMarker([43.891415, -121.427666], {
 	color: "#008000", fillColor:"#008000", 
@@ -632,7 +632,7 @@
   var circle = L.circleMarker([44.013103, -121.35519], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("BB8 | <b>7</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.013103/-121.35519'>Purple Air 233705</a>");
+  }).addTo(map).bindPopup("BB8 | <b>9</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.013103/-121.35519'>Purple Air 233705</a>");
 
   var circle = L.circleMarker([44.08103, -121.32714], {
 	color: "#008000", fillColor:"#008000", 
@@ -642,4 +642,4 @@
   var circle = L.circleMarker([44.07471, -121.36876], {
 	color: "#008000", fillColor:"#008000", 
 	fillOpacity:"0.5", radius:5,
-  }).addTo(map).bindPopup("NW Woodsman Loop | <b>18</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.07471/-121.36876'>Purple Air 241775</a>");
+  }).addTo(map).bindPopup("NW Woodsman Loop | <b>17</b><br><a target='_blank' href='https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/44.07471/-121.36876'>Purple Air 241775</a>");
