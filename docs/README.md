@@ -161,7 +161,9 @@ and a [plugin](https://github.com/ardhi/Leaflet.MousePosition) is used to displa
 
 ### AQI History
 
-*to be added*
+ - buttons allow changing Kriging overlay from current to one of previous 9 images
+   - indicated by timestamp on top of page
+ - working to update individual sensor markers with Krging overlay
 
 ## Kriging
 
