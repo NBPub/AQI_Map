@@ -14,26 +14,24 @@ if type(sensor_data) == str:
     exit
     
     
-# save circleMarkers in separate JS file
+# save leaflet circleMarkers in separate JS file, maintain history
+markers = sorted(Path('data','markers_history').glob('*.js'))[::-1]
+for file in markers:
+    if int(file.stem) >= 9:
+        file.unlink()
+    else:
+        file.rename(Path(file.parent, f'{int(file.stem)+1}.js'))
+        
 base_map_link = 'https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0#17/'
-
 template = env.get_template('markers_template.js')
 with open(Path('data', 'markers_history','0.js'), 'w', encoding='utf-8') as page:
     page.write(template.render(
         sensor_data=sensor_data, base_map_link=base_map_link,
         ))
 
-# Sensor JS variables for Leaflet circleMarkers
-# circle_var_txt = []
-# for i,val in enumerate(sensor_data['id']):
-    # circle_var_txt.append(f'''
-# var circle = L.circleMarker([{sensor_data['lat'][i]},{sensor_data['lng'][i]}], {{
-        # color:"{sensor_data['color'][i]}", fillColor:"{sensor_data['color'][i]}",
-        # fillOpacity:"0.5", radius:5,
-# }}).addTo(map).bindPopup("{sensor_data['name'][i]} | <b>{sensor_data['aqi'][i]}<b><br><a target='_blank' href='{base_map}{sensor_data['lat'][i]}/{sensor_data['lng'][i]}'>Purple Air {val}</a>");                         
-                          # ''')
+
     
-# read and write to Jinja2 template
+# read and write to main Jinja2 template
 template = env.get_template('map_template.html')
 with open(Path('index.html'), 'w', encoding='utf-8') as page:
     page.write(template.render(
