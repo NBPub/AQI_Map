@@ -112,7 +112,7 @@
 		const response = await fetch(url);
 		const json = await response.json();
 		const img_url_base = "https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_history/";
-		const markers_url_base = "https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/markers_history/";
+		const markers_url_base = "./data/markers_history/";
 		
 		if (direction == "back") {
 		  if (current < 9) {
