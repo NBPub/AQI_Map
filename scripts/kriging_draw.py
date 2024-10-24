@@ -29,9 +29,6 @@ def draw_kriging(sensor_data, geo_bbox, model, time_text):
     plt.imshow(zvalues, origin='lower', extent=geo_bbox,
                cmap=aqi_cmap, vmin=0, vmax=300)
     plt.gca().set_axis_off()
-    
-    plt.savefig(Path('data','kriging.png'), 
-                bbox_inches='tight', transparent=True)
                 
     # save kriging history
     imgs = sorted(Path('data','kriging_history').glob('*.png'))[::-1]
