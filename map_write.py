@@ -27,6 +27,7 @@ template = env.get_template('markers_template.js')
 with open(Path('data', 'markers_history','0.js'), 'w', encoding='utf-8') as page:
     page.write(template.render(
         sensor_data=sensor_data, base_map_link=base_map_link,
+        time_text=time_text.split(' ')[1][:5], # HR:MIN,
         ))
 
 
