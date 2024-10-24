@@ -42,14 +42,14 @@
 }
 	</style>
   </head>
-  <body>
+  <body onload="krig_change('start')">
   
 	<!-- Page elements -->
 	<h1>
 	  <img src="static/favicon.png" style="height:30px; width:auto; margin-right:10px;"/>
 	  PM2.5 AQI Map  
 	  <div style="float:right;">
-	    <span id="krig_time">11:45</span>
+	    <span id="krig_time">12:16</span>
 		<a href="https://github.com/NBPub/AQI_Map" target="_blank">
 		  <img src="https://www.svgrepo.com/show/449764/github.svg" style="height:30px; width:auto; margin-left:50px;"/>
 		</a>
@@ -64,11 +64,11 @@
 	<div id="map"></div>
 	<div>
 	  <p style="font-size:1.3em;"> 
-	    203 outdoor sensors returned data in the selected region, of which 129 were 
+	    203 outdoor sensors returned data in the selected region, of which 128 were 
 		used for coloring after filtering for confidence in PM2.5 measurement and location rating.
 		Click on map markers for specific sensor data.
 	  </p>
-	  <p style="color:springgreen;">Data retrieved on 10/24/24 11:45:21 PDT</p>
+	  <p style="color:springgreen;">Data retrieved on 10/24/24 12:16:20 PDT</p>
 	  </div><hr><div>
 	  <ul>
 	    <li><a href="https://api.purpleair.com/"> Purple Air API</a> used to retrieve sensor data, see circle markers on map.</li>
@@ -112,6 +112,7 @@
 		const response = await fetch(url);
 		const json = await response.json();
 		const img_url_base = "https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_history/";
+		const markers_url_base = "https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/markers_history/";
 		
 		if (direction == "back") {
 		  if (current < 9) {
@@ -119,16 +120,22 @@
 		  } else {
 		    next_img = 0;
 		  }
-		} else {
+		} else if (direction == "forward") {
 		  if (current == 0) {
 		    next_img = 9;
 		  } else {
 		    next_img = current-1;
 		  }
+		} else {
+			next_img=0;
 		}
 		
 		document.getElementById("krig_time").innerHTML=json[next_img];
 		document.getElementsByClassName("leaflet-image-layer")[0].src=img_url_base.concat(next_img.toString(), '.png');
+		<!-- Add sensor information -->
+		const script = document.createElement('script');
+		script.src =  markers_url_base.concat(next_img.toString(), ".js");
+		document.head.appendChild(script);
     }  
 	</script>
 	
@@ -168,9 +175,11 @@ cbar.addTo(map);
 	    position:"topright", separator:", ", emptyString:" ",
 		numDigits:3,
 }).addTo(map);
-	  <!-- old circle method 
+	  
 	</script>
-	<!-- Add sensor information -->
-	<script id="markers_js" src="./data/markers_history/0.js"></script>
+	<!-- old circle methods:
+	
+	<script id="markers_js" src="./data/markers_history/0.js"></script> 
+	-->
   </body>
 </html>
