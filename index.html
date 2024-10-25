@@ -49,7 +49,7 @@
 	  <img src="static/favicon.png" style="height:30px; width:auto; margin-right:10px;"/>
 	  PM2.5 AQI Map  
 	  <div style="float:right;">
-	    <span id="krig_time">23:34</span>
+	    <span id="krig_time">02:27</span>
 		<a href="https://github.com/NBPub/AQI_Map" target="_blank">
 		  <img src="https://www.svgrepo.com/show/449764/github.svg" style="height:30px; width:auto; margin-left:50px;"/>
 		</a>
@@ -64,11 +64,11 @@
 	<div id="map"></div>
 	<div>
 	  <p style="font-size:1.3em;"> 
-	    201 outdoor sensors returned data in the selected region, of which 127 were 
+	    199 outdoor sensors returned data in the selected region, of which 120 were 
 		used for coloring after filtering for confidence in PM2.5 measurement and location rating.
 		Click on map markers for specific sensor data.
 	  </p>
-	  <p style="color:springgreen;">Data retrieved on 10/24/24 23:34:56 PDT</p>
+	  <p style="color:springgreen;">Data retrieved on 10/25/24 02:27:51 PDT</p>
 	  </div><hr><div>
 	  <ul>
 	    <li><a href="https://api.purpleair.com/"> Purple Air API</a> used to retrieve sensor data, see circle markers on map.</li>
@@ -95,7 +95,7 @@
 	  <a href="https://www.airnow.gov/aqi/aqi-basics/" target="_blank">EPA AQI Basics</a>
 	</div><hr><div>
 	  <p>
-	    Ordinary Kriging calculated using the "exponential" variogram model with <a href="https://pykrige.readthedocs.io">PyKrige</a>.
+	    Ordinary Kriging calculated using the "hole-effect" variogram model with <a href="https://pykrige.readthedocs.io">PyKrige</a>.
 		The <a href="data/kriging_variance.png" target="_blank">variance plot</a> approximates uncertainty in the map's AQI shading.
 	  </p>
 	    <img />
@@ -116,13 +116,15 @@
 		
 		if (direction == "back") {
 		  if (current < 9) {
+		    document.getElementById("markersJS").remove();
 		    next_img = current+1;
 		  } else {
 		    next_img = 0;
 		  }
 		} else if (direction == "forward") {
 		  if (current == 0) {
-		    next_img = 9;
+		    document.getElementById("markersJS").remove();
+			next_img = 9;
 		  } else {
 		    next_img = current-1;
 		  }
@@ -134,6 +136,7 @@
 		document.getElementsByClassName("leaflet-image-layer")[0].src=img_url_base.concat(next_img.toString(), '.png');
 		<!-- Add sensor information -->
 		const script = document.createElement('script');
+		script.id = "markersJS";
 		script.src =  markers_url_base.concat(next_img.toString(), ".js");
 		document.head.appendChild(script);
     }  
