@@ -1,48 +1,48 @@
-name: run map_write.py
+# name: run map_write.py
 
-on:
-  schedule:
-    - cron:  '15 */3 * * *'
+# on:
+  # schedule:
+    # - cron:  '15 */3 * * *'
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout repository
-        uses: actions/checkout@v4
+# jobs:
+  # build:
+    # runs-on: ubuntu-latest
+    # steps:
+      # - name: checkout repository
+        # uses: actions/checkout@v4
 
-      - name: setup python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+      # - name: setup python
+        # uses: actions/setup-python@v5
+        # with:
+          # python-version: '3.12'
    
-      - name: python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests numpy Jinja2 matplotlib pykrige pytz
+      # - name: python packages
+        # run: |
+          # python -m pip install --upgrade pip
+          # pip install requests numpy Jinja2 matplotlib pykrige pytz
 
-      - name: execute map_write.py
-        env:
-          api_key: ${{ secrets.API_KEY }}
-          geo_bbox: ${{ secrets.GEO_BBOX }}
-          variogram_model: ${{ secrets.VARIOGRAM_MODEL }}
-          local_time: ${{ secrets.LOCAL_TIME }}
-        run: python -m map_write
+      # - name: execute map_write.py
+        # env:
+          # api_key: ${{ secrets.API_KEY }}
+          # geo_bbox: ${{ secrets.GEO_BBOX }}
+          # variogram_model: ${{ secrets.VARIOGRAM_MODEL }}
+          # local_time: ${{ secrets.LOCAL_TIME }}
+        # run: python -m map_write
       
-      - name: delete pycache
-        run: |
-          rm -fr __pycache__
-          rm -fr scripts/__pycache__
+      # - name: delete pycache
+        # run: |
+          # rm -fr __pycache__
+          # rm -fr scripts/__pycache__
      
-      - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated files via actions" --allow-empty)
+      # - name: commit files
+        # run: |
+          # git config --local user.email "action@github.com"
+          # git config --local user.name "GitHub Action"
+          # git add -A
+          # git diff-index --quiet HEAD || (git commit -a -m "updated files via actions" --allow-empty)
 
-      - name: push changes
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main 
+      # - name: push changes
+        # uses: ad-m/github-push-action@v0.8.0
+        # with:
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          # branch: main 

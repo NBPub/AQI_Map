@@ -13,6 +13,9 @@ sensor_data, sensors, time_text, geo_bbox, kriging_variogram = load_data()
 if type(sensor_data) == str:
     exit
     
+# "MM/DD HR:MIN" from "MM/DD/YY HR:MIN:SEC TZ"
+short_time_text = f"{time_text.split(' ')[0][:5]} {time_text.split(' ')[1][:5]}"
+    
     
 # save leaflet circleMarkers in separate JS file, maintain history
 markers = sorted(Path('data','markers_history').glob('*.js'))[::-1]
@@ -27,7 +30,7 @@ template = env.get_template('markers_template.js')
 with open(Path('data', 'markers_history','0.js'), 'w', encoding='utf-8') as page:
     page.write(template.render(
         sensor_data=sensor_data, base_map_link=base_map_link,
-        time_text=time_text.split(' ')[1][:5], # HR:MIN,
+        time_text=short_time_text,
         ))
 
 
@@ -36,8 +39,8 @@ with open(Path('data', 'markers_history','0.js'), 'w', encoding='utf-8') as page
 template = env.get_template('map_template.html')
 with open(Path('index.html'), 'w', encoding='utf-8') as page:
     page.write(template.render(
-        short_time_text=time_text.split(' ')[1][:5], # HR:MIN
-        time_text=time_text, # DATE HR:MIN:SEC
+        short_time_text=short_time_text,
+        time_text=time_text,
         total_sensors=sensors, 
         used_sensors=sensor_data['id'].shape[0],
         geo_bbox=geo_bbox,
