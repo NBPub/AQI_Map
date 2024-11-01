@@ -11,6 +11,7 @@ env = Environment(
 sensor_data, sensors, time_text, geo_bbox, kriging_variogram = load_data()
 # Failed API request
 if type(sensor_data) == str:
+    print(sensor_data)
     exit
     
 # "MM/DD HR:MIN" from "MM/DD/YY HR:MIN:SEC TZ"

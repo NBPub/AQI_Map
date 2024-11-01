@@ -35,7 +35,7 @@ def collect_data():
     # failed API request, return error message and placeholders
     if r.status_code !=200:
         print ('Failed API request', r.status_code, r.text)
-        return r.text, _, _, _, _
+        return r.text, None, None, None, None
     
     # convert from UTC (github actions) to local time, label timezone
     dt_utc = datetime.fromtimestamp(r.json()['data_time_stamp']).replace(tzinfo=timezone.utc)
@@ -73,6 +73,6 @@ def collect_data():
 
     # generate Kriging Graph from AQI sensors
     draw_kriging(sensor_data, geo_bbox, variogram_model, 
-                 retrieved.split(' ')[1][:5]) 
+                 f"{retrieved.split(' ')[0][:5]} {retrieved.split(' ')[1][:5]}") 
     
     return sensor_data, len(d), retrieved, geo_bbox, variogram_model
