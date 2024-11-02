@@ -49,7 +49,7 @@
 	  <img src="static/favicon.png" style="height:30px; width:auto; margin-right:10px;"/>
 	  PM2.5 AQI Map  
 	  <div style="float:right;">
-	    <span id="krig_time">11:35</span>
+	    <span id="krig_time">11/02 15:30</span>
 		<a href="https://github.com/NBPub/AQI_Map" target="_blank">
 		  <img src="https://www.svgrepo.com/show/449764/github.svg" style="height:30px; width:auto; margin-left:50px;"/>
 		</a>
@@ -64,11 +64,11 @@
 	<div id="map"></div>
 	<div>
 	  <p style="font-size:1.3em;"> 
-	    199 outdoor sensors returned data in the selected region, of which 125 were 
+	    197 outdoor sensors returned data in the selected region, of which 124 were 
 		used for coloring after filtering for confidence in PM2.5 measurement and location rating.
 		Click on map markers for specific sensor data.
 	  </p>
-	  <p style="color:springgreen;">Data retrieved on 10/29/24 11:35:07 PDT</p>
+	  <p style="color:springgreen;">Data retrieved on 11/02/24 15:30:57 PDT</p>
 	  </div><hr><div>
 	  <ul>
 	    <li><a href="https://api.purpleair.com/"> Purple Air API</a> used to retrieve sensor data, see circle markers on map.</li>
@@ -113,17 +113,19 @@
 		const json = await response.json();
 		const img_url_base = "https://raw.githubusercontent.com/NBPub/AQI_Map/refs/heads/main/data/kriging_history/";
 		const markers_url_base = "./data/markers_history/";
-		
+		<!-- Remove existing sensor markers, unsure if needed -->
+		if (document.contains(document.getElementById("markersJS"))) {
+		  document.getElementById("markersJS").remove();
+		}
+		<!-- Kriging image and markers change, forward/back/start at 0 -->
 		if (direction == "back") {
 		  if (current < 9) {
-		    document.getElementById("markersJS").remove();
 		    next_img = current+1;
 		  } else {
 		    next_img = 0;
 		  }
 		} else if (direction == "forward") {
 		  if (current == 0) {
-		    document.getElementById("markersJS").remove();
 			next_img = 9;
 		  } else {
 		    next_img = current-1;
@@ -178,11 +180,6 @@ cbar.addTo(map);
 	    position:"topright", separator:", ", emptyString:" ",
 		numDigits:3,
 }).addTo(map);
-	  
 	</script>
-	<!-- old circle methods:
-	
-	<script id="markers_js" src="./data/markers_history/0.js"></script> 
-	-->
   </body>
 </html>
