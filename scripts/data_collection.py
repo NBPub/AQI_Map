@@ -26,7 +26,7 @@ def collect_data():
     payload = {
         'nwlat':geo_bbox[3], 'nwlng':geo_bbox[0], 'selat':geo_bbox[2], 'selng':geo_bbox[1],
         'location_type':0, 
-        'fields':'name,latitude,longitude,confidence,position_rating,pm2.5_30minute',
+        'fields':'name,latitude,longitude,confidence,position_rating,pm2.5_60minute',
         'max_age':1800, # select sensors updated within last 30 minutes
     }
     api_header = {'X-API-Key' : api_key}

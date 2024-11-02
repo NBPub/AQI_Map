@@ -5,6 +5,11 @@ It is currently set within [Central Oregon](https://en.wikipedia.org/wiki/Centra
 but the code allows for any region to be specified by coordinate bounds.
 
 Detailed deployment information is located on the [documentation](/docs#aqi-map-documentation) page.
+
+## API Limitation
+
+As of 02 Nov 2024, a new API key has been obtained and the site will be updated until its points are consumed. 
+After this, a usage report will be listed below.
  
 ## Motivation
 
@@ -25,8 +30,5 @@ and resulting air quality indices (**[AQI](https://www.airnow.gov/aqi/aqi-basics
    - Mapping and tiles provided by [Leaflet](https://leafletjs.com/) and [OpenStreetMap](https://www.openstreetmap.org/)
    - [Hosted](https://nbpub.github.io/AQI_Map/) using [Github Pages](https://pages.github.com/)
  - Data and image overlays updated via [Github Actions](https://github.com/NBPub/AQI_Map)
-   - Currently every 30 minutes
-   - Page allows browsing previous 9 kriging results (previous 4-5 hours)
-   - *working to update sensor marker data with kriging results*
    
 	 

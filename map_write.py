@@ -1,3 +1,4 @@
+from sys import exit
 from scripts.data_load import load_data
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -12,7 +13,7 @@ sensor_data, sensors, time_text, geo_bbox, kriging_variogram = load_data()
 # Failed API request
 if type(sensor_data) == str:
     print(sensor_data)
-    exit
+    exit()
     
 # "MM/DD HR:MIN" from "MM/DD/YY HR:MIN:SEC TZ"
 short_time_text = f"{time_text.split(' ')[0][:5]} {time_text.split(' ')[1][:5]}"
