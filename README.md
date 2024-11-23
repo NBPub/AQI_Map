@@ -1,6 +1,6 @@
 # [AQI Map](https://nbpub.github.io/AQI_Map/)
 
-**Page will stop updating when API credits are consumed, estimated date: `02 Jan 2025`**
+**Page will stop updating when API credits are consumed, estimated date:<br>`02 Jan 2025`**
 
 This repository is used to host a demo page for an AQI Map, and for now, is continuously updated. 
 It is currently set within [Central Oregon](https://en.wikipedia.org/wiki/Central_Oregon), 
@@ -37,7 +37,7 @@ As of 02 Nov 2024, a new API key has been obtained and the site will be updated 
 
  - update every 2 hours for 12 total calls a day
  - approximately 1,378 points per call totaling to 16,530 points per day | `16528.4 ± 46.3, n=7`
-   - points per call varies with amount of sensors, sensor data returned from `[get_sensors](https://api.purpleair.com/#api-sensors-get-sensors-data)` request
+   - points per call varies with amount of sensors, sensor data returned from [`get_sensors`](https://api.purpleair.com/#api-sensors-get-sensors-data) request
    - for this site's selected region, typically 180 to 200 sensors are queried
  - at this rate, points will be consumed in about 60.5 days
    - from 03 Nov 2024 start date to 02 Jan 2025
